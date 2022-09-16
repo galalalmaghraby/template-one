@@ -1,0 +1,243 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: fit-content;
+}
+::-webkit-scrollbar-track{
+    background-color: #23272c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c7791b;
+}
+/* navbar start */
+nav.navbar{
+    height: 90px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #c7791b !important;
+}
+nav.navbar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+nav.navbar ul li {
+    font-size: 18px;
+}
+nav.navbar ul li a {
+    color: black !important;
+}
+/* navbar end */
+/* banner start */
+section.banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/background-1.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+section.banner h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+/* banner end */
+/* menu start  */
+section.menu{
+    min-height: 100vh;
+    background-image: url('assets/background-2.jpg');
+    background-size: 100% 100%;
+    padding: 60px 30px;
+}
+.title{
+    text-align: center;
+    margin: 20px 0px;
+    color: #c7791b;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+section.menu div.d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 50px;
+}
+section.menu div.d-flex div.menu-food{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: 1s all ease-in;
+}
+section.menu div.d-flex div.menu-food img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+section.menu div.d-flex div.menu-food  div.icons{
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px 20px ;
+    background-color: #c7791b;
+    position: absolute;
+    transition: .5s all ease;
+    bottom: -100px;
+}
+section.menu div.d-flex div.menu-food  div.icons i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+section.menu div.d-flex div.menu-food:hover   div.icons{
+    bottom: 0;
+}
+/* menu end  */
+/* about start  */
+section.about{
+    min-height: 100vh;
+    background-image: url('assets/background-3.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+section.about div{
+    max-width: 600px;
+    margin: 50px 60px 0px;
+    padding-left: 30px;
+}
+section.about div h1{
+    color: #c7791b;
+    font-size: 50px;
+    border-bottom: 5px solid #c7791b;
+    width: fit-content;
+}
+section.about div p{
+    color: white;
+    margin: 20px 0px;
+}
+/* about end  */
+/* services start  */
+section.services {
+    padding: 20px;
+    min-height: 500px;
+    background-image: url('assets/background-4.jpg');
+    background-size: 100% 100%;
+}
+section.services div.d-flex{
+    padding: 20px ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.services div.d-flex div{
+    width: 300px;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.services div.d-flex .title{
+    font-size: 30px !important;
+    font-weight: 400;
+}
+section.services div.d-flex img{
+    height: 100px;
+    width: 100px;
+}
+/* services end  */
+/* conract start  */
+section.contact{
+    min-height: 400px;
+    background-image: url('assets/background-5.jpg');
+    background-size: 100% 100%;
+}
+section.contact form{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section.contact form div.parent input{
+    height: 60px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px black;
+}
+section.contact form div.parent input.message{
+    height: 140px;
+}
+section.contact form div.parent input[type=submit]{
+    background-color: #23272c;
+    box-shadow: none;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0;
+    color: #c7791b;
+    transition: .5s all ease;
+    text-transform: capitalize;
+}
+section.contact form div.parent input[type=submit]:hover{
+    color: #23272c;
+    background-color: #c7791b;
+}
+/* conract end  */
+/* footer start  */
+footer{
+    min-height: 60px;
+    background-color: #23272c;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 20px;
+}
+footer p a{
+    text-decoration: none !important;
+    color: #c7791b !important;
+    margin-left: 0px;
+}
+footer #whatsapp{
+    color: white;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+footer #whatsapp i{
+    color: green;
+    font-size: 25px;
+}
+/* footer end  */
+/* responsive on phone  */
+@media only screen and (max-width:600px) {
+    /* nav */
+    nav.navbar ul{
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+    }
+    nav.navbar ul li a {
+        color: white !important;
+    }
+    /*end nav*/
+    /* about */
+    section.about{
+        background-size: cover;
+    }
+    /* end about */
+    /* footer */
+    footer{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    /* end footer*/ 
+}
